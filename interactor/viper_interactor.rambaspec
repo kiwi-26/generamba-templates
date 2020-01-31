@@ -1,0 +1,35 @@
+# Template information section
+name: "viper_interactor"
+summary: "interactor"
+author: "hicka04"
+version: "0.1.0"
+license: "MIT"
+
+# The declarations for code files
+
+code_files:
+# View layer
+- {name: modules/view/ViewController.swift, path: Code/View/viewController.swift.liquid}
+
+# Presenter layer
+- {name: modules/presenter/Presenter.swift, path: Code/Presenter/presenter.swift.liquid}
+
+# Router layer
+- {name: modules/router/Router.swift, path: Code/Router/router.swift.liquid}
+
+# Contract
+- {name: modules/contract/Contract.swift, path: Code/Contract/module_contract.swift.liquid}
+
+# Interactor layer
+- {name: data/interactor/Interactor.swift, path: Code/Interactor/interactor.swift.liquid}
+
+# Contract
+- {name: data/contract/Contract.swift, path: Code/Contract/data_contract.swift.liquid}
+
+# The declarations for test files
+test_files:
+# Interactor tests
+- {name: data/interactor/InteractorTests.swift, path: Tests/Interactor/interactor_tests.swift.liquid}
+
+# Presenter tests
+- {name: modules/presenter/PresenterTests.swift, path: Tests/Presenter/presenter_tests.swift.liquid}
